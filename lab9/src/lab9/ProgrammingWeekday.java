@@ -9,7 +9,7 @@ public enum ProgrammingWeekday {
 	SATURDAY(0.0),
 	SUNDAY(0.0);
 
-	private double workTime;
+	private double workTime = 0;
 
 	private ProgrammingWeekday(double hours) {
 		this.workTime += hours;

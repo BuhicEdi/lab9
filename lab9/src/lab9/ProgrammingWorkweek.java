@@ -4,11 +4,11 @@ public class ProgrammingWorkweek {
 	private double totalWorkTime;
 	
 	public ProgrammingWorkweek() {
-		this.totalWorkTime = 0;
+		this.totalWorkTime = 0.0;
 	}
 	
 	public void addWeekday(ProgrammingWeekday day) {
-		this.totalWorkTime = day.getTime();
+		this.totalWorkTime += day.getTime();
 	}
 	
 	public double getWorktime() {
