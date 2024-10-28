@@ -7,7 +7,7 @@ public class ProgrammingWorkweek {
 		this.totalWorkTime = 0;
 	}
 	
-	public void addWeekDay(ProgrammingWeekday day) {
+	public void addWeekday(ProgrammingWeekday day) {
 		this.totalWorkTime = day.getTime();
 	}
 	
