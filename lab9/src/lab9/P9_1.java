@@ -1,7 +1,5 @@
 package lab9;
 
-import java.util.Arrays;
-
 public class P9_1 {
 
 	public static void main(String[] args) {
@@ -16,5 +14,4 @@ public class P9_1 {
 		System.out.println(s1.getQuizzes().size());
 
 	}
-
 }
