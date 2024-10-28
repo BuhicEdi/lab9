@@ -1,5 +1,7 @@
 package lab9;
 
+import java.util.Arrays;
+
 public class P9_1 {
 
 	public static void main(String[] args) {
@@ -11,6 +13,7 @@ public class P9_1 {
 		System.out.println(s1.getNbrOfQuiz());
 		System.out.println(s1.getTotalScore());
 		System.out.println(s1.getAverageScore());
+		System.out.println(s1.getQuizzes().size());
 
 	}
 

@@ -1,13 +1,11 @@
 package lab9;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class StudentWithArrayList {
 	// Klassattribut som lagrar namn, antal tentamen samt poäng
 	private String name;
-	private List<Double> quizzes = new ArrayList<Double>();
+	private ArrayList<Double> quizzes = new ArrayList<Double>();
 
 	// Konstruktor som skapar en ny student och tar emot personens namn
 	public StudentWithArrayList(String name) {
@@ -37,11 +35,11 @@ public class StudentWithArrayList {
 	// Metod som returnerar totalpoängen
 	public double getTotalScore() {
 		double sum = 0;
-		
+
 		for (double e: quizzes) {
 			sum += e;
 		}
-		
+
 		return sum;
 	}
 
@@ -61,17 +59,12 @@ public class StudentWithArrayList {
 	}
 
 	// Metod som returnerar en kopia av alla lagrade tentamen i arrayformat
-	public double[] getQuizzes() {
-		double[] quizArray = new double[quizzes.size()];
-		
-		for (int i = 0; i < quizzes.size(); i++) {
-			quizArray[i] = quizzes.get(i);
-		} 
-		return quizArray;
+	public ArrayList<Double> getQuizzes() {
+		return quizzes;
 	}
 
 	// Metod som returnerar en kopia av alla lagrade tentamensresultat i strängformat
 	public String toString() {
-		return Arrays.toString(getQuizzes());
+		return quizzes.toString();
 	}
 }
