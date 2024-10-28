@@ -12,6 +12,5 @@ public class P9_1 {
 		System.out.println(s1.getTotalScore());
 		System.out.println(s1.getAverageScore());
 		System.out.println(s1.getQuizzes().size());
-
 	}
 }
