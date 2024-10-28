@@ -12,7 +12,7 @@ public enum ProgrammingWeekday {
 	private double workTime;
 
 	private ProgrammingWeekday(double hours) {
-		this.workTime = hours;
+		this.workTime += hours;
 	}
 
 	public double getTime() {
