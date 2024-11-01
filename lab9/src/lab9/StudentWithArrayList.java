@@ -51,10 +51,6 @@ public class StudentWithArrayList {
 
 	// Metod som tar fram studentens medelvärde
 	public double getAverageScore() {
-		if (quizzes.size() == 0) {
-			return 0.0;
-		}
-
 		return getTotalScore() / quizzes.size();
 	}
 
