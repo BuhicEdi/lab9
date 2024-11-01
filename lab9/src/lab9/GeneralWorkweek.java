@@ -19,9 +19,9 @@ public class GeneralWorkweek {
 	public void addWeekday(Weekday day) {
 		switch (day) {
 		case MONDAY, 
-		TUESDAY, 
-		WEDNESDAY, 
-		THURSDAY -> this.totalWorkTime += 8.0;
+			TUESDAY, 
+			WEDNESDAY, 
+			THURSDAY -> this.totalWorkTime += 8.0;
 		case FRIDAY -> this.totalWorkTime += 6.0;
 		default -> this.totalWorkTime += 0;
 		}
