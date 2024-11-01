@@ -1,6 +1,12 @@
 package lab9;
 
 import java.util.ArrayList;
+/**
+ * Denna klass lagrar en students tentamenresultat med hjälp utav ArrayList. 
+ * 
+ * @version 2024-11-01
+ * @author Edi Buhic
+ */
 
 public class StudentWithArrayList {
 	// Klassattribut som lagrar namn, antal tentamen samt poäng
@@ -45,6 +51,10 @@ public class StudentWithArrayList {
 
 	// Metod som tar fram studentens medelvärde
 	public double getAverageScore() {
+		if (quizzes.size() == 0) {
+			return 0.0;
+		}
+
 		return getTotalScore() / quizzes.size();
 	}
 
